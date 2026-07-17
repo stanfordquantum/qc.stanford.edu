@@ -1,0 +1,35 @@
+# Add new events here — most recent first is not required, the events
+# page sorts them by date automatically.
+#
+# - title: "Spring Colloquium"
+#   image: "QHS.webp"
+#   date: 2026-09-12
+#   time: "4:00 PM"
+#   location: "Room 101"
+#   description: "Talk on quantum error correction."
+
+- title: "Intro Mixer"
+  image: "headshots/default.png"
+  date: TBD
+  time: "TBD"
+  location: "Varian Physics TBD"
+  description: >-
+    Kick off the year with the association — free food, a short intro to
+    what we do, and a look at what's coming Fall quarter.
+
+- title: "Intro to Quantum Computing Workshop"
+  image: "headshots/default.png"
+  date: TBD
+  time: "TBD"
+  location: "TBD"
+  description: >-
+    A beginner-friendly walkthrough of qubits, gates, and circuits — no
+    physics or linear algebra background required.
+
+- title: "Fall Fest"
+  image: "headshots/default.png"
+  date: TBD
+  time: "TBD"
+  location: "TBD"
+  description: >-
+    A workshop with an introduction to quantum programming.

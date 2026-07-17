@@ -1,0 +1,33 @@
+title: Stanford Quantum Computing Association
+short_name: SQCA
+tagline: "Building the community around quantum computing at Stanford."
+description: >-
+  A graduate and undergraduate student organization at Stanford University
+  dedicated to the future scientists and engineers of quantum computing.
+url: "https://qc.stanford.edu"
+baseurl: ""
+
+contact_email: "stanfordquantum [at] gmail [dot] com"
+# Replace with your real Google Form URL for the mailing list signup.
+mailing_list_url: "https://forms.gle/3at4fjDs3Pcrjmok6"
+
+nav:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: What We've Done
+    url: /what-weve-done/
+  - title: Events
+    url: /events/
+
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules

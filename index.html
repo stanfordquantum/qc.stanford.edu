@@ -1,0 +1,112 @@
+---
+layout: default
+permalink: /
+hero: true
+body_class: "has-hero"
+---
+
+<section class="hero">
+  <canvas id="circuit-canvas" aria-hidden="true"></canvas>
+  <div class="hero__content">
+    <img class="hero__mark" src="{{ '/static/assets/brand/sqca-wordmark.svg' | relative_url }}" alt="{{ site.title }}">
+    <h1>Building the future of <em>quantum computing</em> at Stanford.</h1>
+    <p>{{ site.description }}</p>
+    <div class="hero__actions">
+      <a class="button" href="{{ '/join/' | relative_url }}">Join the association</a>
+      <a class="button button--ghost" href="{{ '/events/' | relative_url }}">See upcoming events</a>
+    </div>
+  </div>
+  <a href="#mission" class="hero__scroll-cue" aria-label="Scroll to learn more"></a>
+</section>
+
+<section id="mission">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow">Our Mission</p>
+      <h2>Provide, prepare, produce.</h2>
+      <hr class="rule">
+      <p class="lede">
+        Our mission is to develop the future scientists and engineers involved in quantum computing 
+        through community, education, and hands-on
+        research and projects.
+      </p>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <p class="eyebrow">Provide</p>
+        <h3>Community</h3>
+        <p>
+          Our goal is to provide a community of people who are interested in quantum computing. 
+          We cultivate a community by providing casual social events, such as mixers.
+        </p>
+      </div>
+      <div class="pillar">
+        <p class="eyebrow">Prepare</p>
+        <h3>Education</h3>
+        <p>
+          We educate the community by hosting workshops, visits to local companies, discussions with professors, and teaching opportunities.
+        </p>
+      </div>
+      <div class="pillar">
+        <p class="eyebrow">Produce</p>
+        <h3>Research</h3>
+        <p>
+          We want our community to solve problems in the field of quantum computing. 
+          We provide a space for this through paper reading groups, hackathons and other projects.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section--alt">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow">What to Expect</p>
+      <h2>Our Typical Events</h2>
+      <hr class="rule">
+    </div>
+
+    <div class="circle-grid">
+      {% for activity in site.data.activities %}
+        <div class="circle-item">
+          <div class="circle-item__badge"></div>
+          <h3>{{ activity.title }}</h3>
+          <p>{{ activity.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow">Upcoming</p>
+      <h2>Events</h2>
+      <hr class="rule">
+    </div>
+
+    <div class="event-grid">
+      {% assign upcoming = site.data.events | sort: "date" %}
+      {% for event in upcoming limit: 3 %}
+        <div class="event-card">
+          <div class="event-card__media">
+            <img src="{{ '/static/assets/' | append: event.image | relative_url }}" alt="{{ event.title }}">
+            <span class="event-card__date">{{ event.date | date: "%b %-d" }}</span>
+          </div>
+          <div class="event-card__body">
+            <p class="event-card__meta">{{ event.time }} &middot; {{ event.location }}</p>
+            <h3>{{ event.title }}</h3>
+            <p>{{ event.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="section-foot">
+      <a class="button button--outline" href="{{ '/events/' | relative_url }}">View all events</a>
+    </div>
+  </div>
+</section>

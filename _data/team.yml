@@ -1,0 +1,25 @@
+# Executive committee shows up first on the About page, in the order listed.
+# General members show up below in a lighter-weight grid.
+#
+# photo should be a filename inside static/assets/headshots/ — use
+# "default.png" until a real headshot is available.
+
+exec:
+  - name: "Eegan Ram"
+    title: "President"
+    major: "Physics, '28"
+    photo: "eeganr.png"
+  - name: "Xander Zufelt"
+    title: "Vice President"
+    major: "Physics, '29"
+    photo: "default.png"
+  - name: "Angela Zhang"
+    title: "Financial Officer"
+    major: "Physics, '29"
+    photo: "default.png"
+
+members:
+  - name: "Coming Fall 2026!"
+    title: "Team Member"
+    major: "This could be you!"
+    photo: "default.png"

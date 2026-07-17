@@ -1,0 +1,40 @@
+---
+layout: default
+title: What We've Done
+permalink: /what-weve-done/
+---
+
+<header class="page-header">
+  <div class="container">
+    <p class="eyebrow">Our History</p>
+    <h1>What we've done</h1>
+    <p>A running record of the talks, workshops, and events we've hosted over the years.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    {% assign years = site.data.history | sort: "year" | reverse %}
+    {% for block in years %}
+      <div class="history-year">
+        <div class="history-year__head">
+          <h2>{{ block.year }}</h2>
+          <hr class="rule">
+        </div>
+        <div class="history-list">
+          {% for event in block.events %}
+            <div class="history-item">
+              <div class="history-item__thumb">
+                <img src="{{ '/static/assets/' | append: event.image | relative_url }}" alt="{{ event.title }}">
+              </div>
+              <div>
+                <h3>{{ event.title }}</h3>
+                <p>{{ event.description }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

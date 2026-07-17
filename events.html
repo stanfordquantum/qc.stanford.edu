@@ -1,0 +1,38 @@
+---
+layout: default
+title: Events
+permalink: /events/
+---
+
+<header class="page-header">
+  <div class="container">
+    <p class="eyebrow">Calendar</p>
+    <h1>Upcoming events</h1>
+    <p>Everything we've got on the calendar &mdash; talks, workshops, socials, and more.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    {% assign events = site.data.events | sort: "date" %}
+    {% if events.size > 0 %}
+      <div class="event-grid">
+        {% for event in events %}
+          <div class="event-card">
+            <div class="event-card__media">
+              <img src="{{ '/static/assets/' | append: event.image | relative_url }}" alt="{{ event.title }}">
+              <span class="event-card__date">{{ event.date | date: "%b %-d, %Y" }}</span>
+            </div>
+            <div class="event-card__body">
+              <p class="event-card__meta">{{ event.time }} &middot; {{ event.location }}</p>
+              <h3>{{ event.title }}</h3>
+              <p>{{ event.description }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="team-empty">No events scheduled right now &mdash; check back soon.</p>
+    {% endif %}
+  </div>
+</section>

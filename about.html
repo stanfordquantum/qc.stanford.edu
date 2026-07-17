@@ -1,0 +1,63 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+
+<header class="page-header">
+  <div class="container">
+    <p class="eyebrow">About Us</p>
+    <h1>The people behind the association</h1>
+    <p>Meet the students who run the Stanford Quantum Computing Association.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Executive Committee</p>
+      <h2>Current leadership</h2>
+      <hr class="rule">
+    </div>
+
+    <div class="team-grid">
+      {% for person in site.data.team.exec %}
+        <div class="team-card">
+          <div class="team-card__photo">
+            <img src="{{ '/static/assets/headshots/' | append: person.photo | relative_url }}" alt="{{ person.name }}">
+          </div>
+          <h3>{{ person.name }}</h3>
+          <p class="role">{{ person.title }}</p>
+          <p class="major">{{ person.major }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section--alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow"> Organizing Team</p>
+      <h2>Our Team</h2>
+      <hr class="rule">
+    </div>
+
+    {% if site.data.team.members and site.data.team.members.size > 0 %}
+      <div class="team-grid team-grid--members">
+        {% for person in site.data.team.members %}
+          <div class="team-card">
+            <div class="team-card__photo">
+              <img src="{{ '/static/assets/headshots/' | append: person.photo | relative_url }}" alt="{{ person.name }}">
+            </div>
+            <h3>{{ person.name }}</h3>
+            <p class="role">{{ person.title }}</p>
+            <p class="major">{{ person.major }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="team-empty">Member roster coming soon.</p>
+    {% endif %}
+  </div>
+</section>

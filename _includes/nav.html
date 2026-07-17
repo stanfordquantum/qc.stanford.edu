@@ -1,0 +1,23 @@
+<header class="site-nav" id="site-nav">
+  <div class="site-nav__inner">
+    <a class="site-nav__brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+      <img src="{{ '/static/assets/brand/sqca-wordmark.svg' | relative_url }}" alt="{{ site.title }}" height="28">
+    </a>
+
+    <button class="site-nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="nav-menu" class="site-nav__menu">
+      <ul>
+        {% for item in site.nav %}
+        <li>
+          <a href="{{ item.url | relative_url }}"
+             class="{% if page.url == item.url %}is-active{% endif %}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <a class="button button--small" href="{{ '/join/' | relative_url }}">Join</a>
+    </nav>
+  </div>
+</header>

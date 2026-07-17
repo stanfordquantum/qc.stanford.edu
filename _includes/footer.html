@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <img class="site-footer__mark" src="{{ '/static/assets/brand/SQCA_graphic.svg' | relative_url }}" alt="" height="32">
+    <p class="site-footer__tagline">{{ site.tagline }}</p>
+    <nav class="site-footer__links">
+      {% for item in site.nav %}
+      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {% endfor %}
+      <a href="{{ '/join/' | relative_url }}">Join</a>
+    </nav>
+    <p class="site-footer__meta">
+      <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
+      &middot; &copy; {{ site.time | date: '%Y' }} {{ site.title }}
+    </p>
+  </div>
+</footer>

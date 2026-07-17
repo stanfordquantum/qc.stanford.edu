@@ -1,0 +1,160 @@
+# Chronological record of what the association has done, most recent year first.
+# Add a new year block at the top as time goes on.
+
+- year: 2025
+  events:
+    - title: "Quantum High School"
+      image: "QHS.webp"
+      description: >-
+        Hosted our 3rd annual Quantum High School — we spent a quarter
+        designing and teaching a custom curriculum to bring the fundamentals
+        of quantum computing to roughly 100 high schoolers.
+
+- year: 2021
+  events:
+    - title: "Quantum Pathways Night"
+      image: "white.png"
+      description: >-
+        Co-hosted with QFarm. Undergraduate and graduate students visited
+        online booths representing four different quantum pathways, with
+        professors and students on hand to answer questions about resources
+        and opportunities.
+    - title: "Stanford &ndash; Yale Speaker Series"
+      image: "white.png"
+      description: "Featured Professor Steve Girvin from Yale."
+    - title: "Reading Group: Gordon Martinez-Piedra"
+      image: "white.png"
+      description: "A presentation on quantum computing applied to computer networks and communications."
+    - title: "Introduction to Quantum Computing Talk"
+      image: "white.png"
+      description: >-
+        A beginner-friendly talk covering the basics of quantum computing and
+        its applications, plus how to get involved regardless of major.
+    - title: "Reading Group: Zhiyong Zhang"
+      image: "white.png"
+      description: "A presentation on a quantum algorithm for finding the lowest eigenstates of a Hamiltonian."
+    - title: "Quantum Conversations"
+      image: "white.png"
+      description: >-
+        Alexy Khrabrov, joined by Brett Koonce and Mark Kasevich, discussed
+        quantum mechanics, implementations, and fabrication techniques.
+    - title: "Reading Group: Akshay Malhotra"
+      image: "white.png"
+      description: "A presentation on quantum computing in finance."
+    - title: "Winter Quarter Welcome Event"
+      image: "white.png"
+      description: >-
+        Introduced new initiatives for the quarter, including Stanford's
+        first Quantum Hackathon and a Quantum Open Source Projects track.
+
+- year: 2020
+  events:
+    - title: "Stanford Quantum Chess Tournament"
+      image: "white.png"
+      description: >-
+        Students from Stanford, Berkeley, and other universities received a
+        tutorial on quantum chess ahead of an intercollegiate competition.
+    - title: "Quantum Ecosystem Talk"
+      image: "white.png"
+      description: "Featured Denise Ruffner (IonQ) and Andre Konig (OneQuantum)."
+    - title: "Reading Group: Kejun (Ben) Xu"
+      image: "white.png"
+      description: "A presentation on the experimental progress of Majorana fermions."
+    - title: "Post-Supremacy Talk with Google AI Quantum"
+      image: "white.png"
+      description: "Bill Huggins discussed Google's post-supremacy quantum computing work."
+    - title: "Quantum Conversations: Tequila"
+      image: "white.png"
+      description: "Alba Cervera presented on designing variational quantum algorithms with Tequila."
+    - title: "Reading Group: Matthew Radzihovsky"
+      image: "white.png"
+      description: "A presentation on the 1-D topological Majorana qubit."
+    - title: "Industry Talk with Atom Computing"
+      image: "white.png"
+      description: "Quantum engineer Mickey McDonald discussed Atom Computing's work."
+    - title: "Reading Group Inaugural Meeting: Gordon Martinez-Piedra"
+      image: "white.png"
+      description: "A presentation reviewing the landscape of quantum algorithms."
+    - title: "Quantum Computing Bootcamp Welcome Event"
+      image: "white.png"
+      description: "Stanford students joined the welcome event for Stanford's first Quantum Computing Bootcamp with IBM."
+    - title: "Talk with the Head of Algorithms at QCWare"
+      image: "white.png"
+      description: "Iordanis Kerenidis discussed designing quantum algorithms for machine learning and optimization."
+    - title: "Fall Quarter Welcome to SQCA"
+      image: "white.png"
+      description: "The new leadership team introduced the club's initiatives and events for the year."
+    - title: "Quantum Industry Panel"
+      image: "white.png"
+      description: "A panel of engineers, researchers, and managers from Google, Microsoft, and IBM."
+    - title: "Tensor Network Workshop with Google X"
+      image: "white.png"
+      description: >-
+        More than 100 people attended a two-hour virtual session hosted by
+        X, the Moonshot Factory (formerly Google X), on tensor networks.
+    - title: "Lunch with Prof. Kathryn Moler"
+      image: "white.png"
+      description: "The Vice Provost and Dean of Research discussed her research and administrative role."
+    - title: "Google X on Quantum Technologies"
+      image: "white.png"
+      description: "Jack Hidary gave an update on current quantum technology approaches in the NISQ regime."
+    - title: "Industry Lunch with QCWare"
+      image: "white.png"
+      description: "CEO Matt Johnson and Head of Chemistry Simulations Robbert Parrish discussed quantum solutions."
+    - title: "Introduction to Quantum Computing Talk"
+      image: "white.png"
+      description: "Jessica Pointing presented on the potential applications and progress of quantum computing."
+    - title: "Journal Club"
+      image: "white.png"
+      description: "Students discussed John Preskill's paper, \"Quantum Computing in the NISQ Era and Beyond.\""
+    - title: "Lunch with Prof. Vedika Khemani"
+      image: "white.png"
+      description: "The Physics Department professor discussed her research and offered career advice."
+    - title: "Meet and Greet at Joe and the Juice"
+      image: "white.png"
+      description: "A social event in Palo Alto to discuss quantum computing."
+    - title: "Mentorship Coffee Chats"
+      image: "white.png"
+      description: "Members were matched for mentorship over a provided meal."
+    - title: "Quantum Computing Project with IBM"
+      image: "white.png"
+      description: "A partnership with SystemX and the CS210 course on an IBM-sponsored project."
+
+- year: 2019
+  events:
+    - title: "Dinner with the Google Quantum Team"
+      image: "white.png"
+      description: "A social dinner with Google Quantum Team engineers at Local Union 271."
+    - title: "Quantum Supremacy Talk with Google"
+      image: "white.png"
+      description: "Quantum Electronics Engineer Jimmy Chen discussed Google's quantum supremacy results."
+    - title: "Quantum Programming Workshop with Microsoft"
+      image: "white.png"
+      description: "An engineer demonstrated Microsoft's Q# quantum development tool."
+    - title: "Industry Lunch with Will Zeng"
+      image: "white.png"
+      description: "A lunch discussion with the former Rigetti product lead for quantum cloud services."
+    - title: "Quantum Neural Network Talk"
+      image: "white.png"
+      description: "Stanford postdocs Peter McMahon and Logan Wright presented on quantum neural networks."
+    - title: "Field Trip to Rigetti"
+      image: "white.png"
+      description: "We hired a bus and drove twenty Stanford students to Rigetti, a quantum computing startup in Berkeley."
+    - title: "Quantum Programming Workshop with Jessica Pointing"
+      image: "white.png"
+      description: "Students learned the foundations of quantum computing and coded programs on real quantum computers."
+    - title: "Social Event at Salt and Straw"
+      image: "white.png"
+      description: "A free ice cream social in Palo Alto."
+    - title: "Field Trip to PsiQuantum"
+      image: "white.png"
+      description: "An exclusive tour of the quantum hardware startup's Palo Alto offices."
+    - title: "Lunch with Prof. Monika Schleier-Smith"
+      image: "white.png"
+      description: "A physicist active in quantum computing hardware research held a lunch discussion."
+    - title: "Lunches with Prof. Patrick Hayden"
+      image: "white.png"
+      description: "Multiple organized lunches with a quantum information theorist throughout the quarter."
+    - title: "Quantum Programming Workshop with Rigetti"
+      image: "white.png"
+      description: "Amy Brown taught quantum programming for about two hours, followed by dinner."
