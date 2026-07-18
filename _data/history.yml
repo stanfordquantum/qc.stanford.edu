@@ -1,14 +1,51 @@
 # Chronological record of what the association has done, most recent year first.
 # Add a new year block at the top as time goes on.
 
-- year: 2025
+- year: 2025-26
   events:
     - title: "Quantum High School"
-      image: "QHS.webp"
+      image: "history/qhs26.png"
+      description: >-
+        Hosted our 4th annual Quantum High School — we spent winter quarter
+        teaching a custom curriculum to bring the fundamentals
+        of quantum computing to roughly 100 high schoolers.
+    - title: "Stanford Splash"
+      image: "history/splash25.png"
+      description: >-
+        Hosted two sections of a quantum computing class (C8229) for high school students at Stanford Splash in the fall!
+    - title: "BlueQubit Quantum Hackathon"
+      image: "history/bluequbithackathon.png"
+      description: >-
+        Hosted a 12-hour hackathon for students to work on "peaked circuit" problems in quantum computing in partnership with BlueQubit!
+    - title: "IBM Qiskit Fall Fest"
+      image: "history/fallfest25.jpeg"
+      description: >-
+        Hosted a workshop for Stanford students to learn the fundamentals of quantum computing and Qiskit, working on IBM-provided notebooks in the process.
+    - title: "Hayk Tepanyan Talk"
+      image: "history/hayk.png"
+      description: >-
+        Hosted Hayk Tepanyan, co-founder and CTO of BlueQubit to discuss the current state of quantum computing and the future of the field, as well as peaked circuits.
+    - title: "Joel Pendelton Talk"
+      image: "white.png"
+      description: >-
+        Hosted Joel Pendelton, co-founder and CEO of Conductor Quantum to discuss his work in agents for quantum programming.
+
+- year: 2024-25
+  events:
+    - title: "Quantum High School"
+      image: "history/qhs26.png"
       description: >-
         Hosted our 3rd annual Quantum High School — we spent a quarter
         designing and teaching a custom curriculum to bring the fundamentals
         of quantum computing to roughly 100 high schoolers.
+    - title: "Stanford Splash"
+      image: "history/splash25.png"
+      description: >-
+        Hosted two sections of a quantum computing class (C8229) for high school students at Stanford Splash in the fall!
+    - title: "IBM Qiskit Fall Fest"
+      image: "history/fallfest25.jpeg"
+      description: >-
+        Hosted a workshop for Stanford students to learn the fundamentals of quantum computing and Qiskit, working on IBM-provided notebooks in the process.
 
 - year: 2021
   events:

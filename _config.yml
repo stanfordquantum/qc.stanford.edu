@@ -2,8 +2,8 @@ title: Stanford Quantum Computing Association
 short_name: SQCA
 tagline: "Building the community around quantum computing at Stanford."
 description: >-
-  A graduate and undergraduate student organization at Stanford University
-  dedicated to the future scientists and engineers of quantum computing.
+  Stanford Quantum Computing Association is a graduate and undergraduate student organization at Stanford University
+  dedicated to the future scientists and engineers of quantum.
 url: "https://qc.stanford.edu"
 baseurl: ""
 
@@ -16,6 +16,18 @@ nav:
     url: /
   - title: About
     url: /about/
+  - title: Initiatives
+    children:
+      - title: High School Quantum Computing Course
+        url: /initiatives/high-school-course/
+      - title: IBM Fall Fest
+        url: /initiatives/fall-fest/
+  - title: Resources
+    children:
+      - title: Resources for Stanford
+        url: /resources/for-stanford/
+      - title: Course Pathways
+        url: /resources/course-pathways/
   - title: What We've Done
     url: /what-weve-done/
   - title: Events

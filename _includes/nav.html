@@ -1,7 +1,7 @@
 <header class="site-nav" id="site-nav">
   <div class="site-nav__inner">
     <a class="site-nav__brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
-      <img src="{{ '/static/assets/brand/sqca-wordmark.svg' | relative_url }}" alt="{{ site.title }}" height="28">
+      <img src="{{ '/static/assets/brand/sqca-wordmark-nav.png' | relative_url }}" alt="{{ site.title }}" height="28">
     </a>
 
     <button class="site-nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
@@ -11,10 +11,24 @@
     <nav id="nav-menu" class="site-nav__menu">
       <ul>
         {% for item in site.nav %}
+        {% if item.children %}
+        <li class="has-dropdown">
+          <span class="site-nav__parent">{{ item.title }}</span>
+          <ul class="site-nav__dropdown">
+            {% for child in item.children %}
+            <li>
+              <a href="{{ child.url | relative_url }}"
+                 class="{% if page.url == child.url %}is-active{% endif %}">{{ child.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        {% else %}
         <li>
           <a href="{{ item.url | relative_url }}"
              class="{% if page.url == item.url %}is-active{% endif %}">{{ item.title }}</a>
         </li>
+        {% endif %}
         {% endfor %}
       </ul>
       <a class="button button--small" href="{{ '/join/' | relative_url }}">Join</a>

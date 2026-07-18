@@ -1,0 +1,108 @@
+---
+layout: default
+title: Resources for Stanford
+permalink: /resources/for-stanford/
+---
+
+<header class="page-header">
+  <div class="container">
+    <p class="eyebrow">Resources</p>
+    <h1>Resources for Stanford</h1>
+    <p>Programs, labs, and courses across campus working on quantum computing.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Related Organizations</p>
+      <h2>Other groups at Stanford</h2>
+      <hr class="rule">
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <p class="eyebrow">SystemX Alliance</p>
+        <h3>Industry Collaboration</h3>
+        <p>
+          A collaboration between Stanford and industrial firms working on
+          quantum computing, with seminars open to members via their
+          mailing list.
+        </p>
+      </div>
+      <div class="pillar">
+        <p class="eyebrow">Ginzton Lab</p>
+        <h3>Research Lab</h3>
+        <p>
+          An interdisciplinary research lab exploring quantum science and
+          engineering, photonic science and engineering, and nanoscience
+          and engineering.
+        </p>
+      </div>
+      <div class="pillar">
+        <p class="eyebrow">Q-Farm</p>
+        <h3>University Initiative</h3>
+        <p>
+          The Quantum Fundamentals, ARchitecture and Machines initiative,
+          run jointly by Stanford and SLAC.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section--alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Educational Resources</p>
+      <h2>Beyond the classroom</h2>
+      <hr class="rule">
+    </div>
+    <ul class="list">
+      <li>A hands-on Qiskit workshop on quantum computing, run by the SystemX Alliance.</li>
+      <li>Brilliant.org's interactive quantum computing course, created with Microsoft and X (formerly Google X).</li>
+      <li>MIT's three-course quantum information science series on edX.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Stanford Course Offerings</p>
+      <h2>30+ courses, across nine departments</h2>
+      <hr class="rule">
+      <p class="lede">
+        Applied Physics, Chemistry, Computer Science, Electrical Engineering,
+        Mathematics, Materials Science, Music, Physics, and Statistics all
+        offer courses that touch quantum computing.
+      </p>
+      <p>
+        For the fuller picture &mdash; prerequisites, sequencing, and a
+        department-by-department listing &mdash; see our
+        <a href="{{ '/resources/course-pathways/' | relative_url }}">Course Pathways</a> page.
+      </p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Course Number</th>
+            <th>Course Name</th>
+            <th>Faculty Contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for course in site.data.courses %}
+          <tr>
+            <td>{{ course.number }}</td>
+            <td>{{ course.name }}</td>
+            <td>{{ course.contact }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
